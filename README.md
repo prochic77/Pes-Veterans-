@@ -3,7 +3,7 @@
 Funkční komunitní web: Dream Team sezóny, rychlé ligy reálných klubů, vyřazovací turnaje a 1v1 / 2v2. Retro vzhled je původní CSS, bez převzatých herních obrázků.
 
 ## Provoz
-- Nasazení: https://pes-veterans-league.sprypike512.chatgpt.site
+- Cílová adresa hostingu (publikace se dokončuje samostatně): https://pes-veterans-league.sprypike512.chatgpt.site
 - Hosting: Sites / Cloudflare Workers. Trvalá databáze Cloudflare D1, vazba `DB`.
 - Přihlášení: ChatGPT, poskytované hostingem. Správce je určen runtime hodnotou `ADMIN_EMAIL` uloženou mimo repozitář.
 - Veřejné čtení závisí na nastavení přístupu hostingu. Zápisy vždy vyžadují přihlášení; založení soutěže, schválení hráčů a potvrzení výsledku vyžaduje správce.
@@ -43,3 +43,5 @@ pnpm start
 Testy používají SQLite a skutečné API handlery: ověřují oprávnění, ochranu původu, duplicitní přihlášky, rozpisy, skóre, 2v2, kariéry i postup turnajem. Žádná demonstrační data se nevkládají do produkce.
 
 Kód je v tomto repozitáři; nasazená verze se publikuje přes Sites ze stejného sestavení. Samotný GitHub push zatím nespouští publikaci na Sites.
+
+
